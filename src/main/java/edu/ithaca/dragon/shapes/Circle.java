@@ -14,7 +14,7 @@ public class Circle {
      * @return the area of this circle
      */
     public double calcArea(){
-        double squared = this.radius;
+        double squared = this.radius * this.radius;
         return Math.PI * squared;
     }
 
