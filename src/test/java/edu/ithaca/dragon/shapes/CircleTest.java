@@ -47,7 +47,21 @@ public class CircleTest {
 
 
     }
+    @Test
+    public void doubleSizeTest(){
+        Circle myCircle = new Circle(2);
+        assertEquals(4, myCircle.doubleSize());
+        
+        myCircle = new Circle(1);
+        assertEquals(2, myCircle.doubleSize());
+
+        myCircle = new Circle(25);
+        assertEquals(50, myCircle.doubleSize());
+
+
+    }
 
 
     
 }
+
