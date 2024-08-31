@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.jupiter.api.Test;
 
-public class CircleTest {
+public class RectangleTest {
 
     @Test
     public void sampleTestThatPasses(){
@@ -50,17 +50,13 @@ public class CircleTest {
     @Test
     public void doubleSizeTest(){
         Circle myCircle = new Circle(2);
-        myCircle.doubleSize();
-        assertEquals(myCircle.longestLineWithin(), 8);
-     
+        assertEquals(4, myCircle.doubleSize());
+        
         myCircle = new Circle(1);
-        myCircle.doubleSize();
-        assertEquals(myCircle.longestLineWithin(), 4);
-        
+        assertEquals(2, myCircle.doubleSize());
+
         myCircle = new Circle(25);
-        myCircle.doubleSize();
-        assertEquals(myCircle.longestLineWithin(), 100);
-        
+        assertEquals(50, myCircle.doubleSize());
 
 
     }
