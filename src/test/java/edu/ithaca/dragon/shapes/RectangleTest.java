@@ -21,11 +21,11 @@ public class RectangleTest {
         Rectangle myRectangle = new Rectangle(2,3);
         assertEquals(6, myRectangle.calcArea(), 0.0001);
         
-        Rectangle myRectangle = new Rectangle(99,5);
-        assertEquals(495, myRectangle.calcArea(), 0.0001);
+        Rectangle myRectangle2 = new Rectangle(99,5);
+        assertEquals(495, myRectangle2.calcArea(), 0.0001);
 
-        Rectangle myRectangle = new Rectangle(15,4);
-        assertEquals(60, myRectangle.calcArea(), 0.0001);
+        Rectangle myRectangle3 = new Rectangle(15,4);
+        assertEquals(60, myRectangle3.calcArea(), 0.0001);
     }
 
     @Test
@@ -40,10 +40,19 @@ public class RectangleTest {
     }
     @Test
     public void doubleSizeTest(){
+        Rectangle myRectangle = new Rectangle(2,3);
+        myRectangle.doubleSize();
+        assertEquals(24, myRectangle.calcArea(), 0.0001);
         
+        Rectangle myRectangle2 = new Rectangle(99,5);
+        myRectangle2.doubleSize();
+        assertEquals(1980, myRectangle2.calcArea(), 0.0001);
 
-
+        Rectangle myRectangle3 = new Rectangle(15,4);
+        myRectangle3.doubleSize();
+        assertEquals(240, myRectangle3.calcArea(), 0.0001);
     }
+
 
 
     
