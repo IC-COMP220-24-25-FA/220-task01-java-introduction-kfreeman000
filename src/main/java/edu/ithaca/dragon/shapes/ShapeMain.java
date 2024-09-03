@@ -1,6 +1,7 @@
 package edu.ithaca.dragon.shapes;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class ShapeMain {
     
@@ -14,10 +15,22 @@ public class ShapeMain {
         aList.add(new Rectangle(1,3));
         aList.add(new Rectangle(25,10));
         aList.add(new Rectangle(5,8));
+        Scanner scanner = new Scanner(System.in);
         for (int i = 0; i < aList.size(); i++) {
-            System.out.println(aList.get(i));
+            System.out.println(aList.get(i).calcArea());
+            System.out.println(aList.get(i).longestLineWithin());
+            System.out.println("choose a rectangle index 0-4");
+            int index = Integer.parseInt(scanner.nextLine());
+            aList.get(index).doubleSize();
+            System.out.println(aList.get(i).calcArea());
+            System.out.println(aList.get(i).longestLineWithin());
+        }
+        
+
+        
+        scanner.close();
+
         }
 
-
     }
-}
+
