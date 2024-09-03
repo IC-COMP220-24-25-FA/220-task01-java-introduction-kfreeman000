@@ -18,12 +18,13 @@ public class TriangleTest {
     
     @Test
     public void calcAreaTest(){
-        
+        Triangle tri1 = new Triangle(3,4);
+        assertEquals(6, tri1.calcArea());
     }
 
     @Test
     public void TestConstructorError(){
-        assertThrows(IllegalArgumentException.class, () -> new Rectangle(0,0));
+        assertThrows(IllegalArgumentException.class, () -> new Triangle(0,0));
     }
 
     @Test

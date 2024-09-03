@@ -1,16 +1,15 @@
 package edu.ithaca.dragon.shapes;
 
 public class Triangle {
-    private double length;
-    private double width;
+    private double height;
+    private double base;
     
 
-    public Triangle(double length, double width){
-        if (length <=0 || width <=0) {
+    public Triangle(double height, double base){
+        if (height <=0 || base <=0) {
             throw new IllegalArgumentException("Length and width must be positive");
         }
-        this.length = length;
-        this.width = width;
+        
     }
 
     public double calcArea(){
