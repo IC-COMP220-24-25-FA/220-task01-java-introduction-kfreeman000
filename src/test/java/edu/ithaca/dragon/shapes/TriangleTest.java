@@ -35,7 +35,9 @@ public class TriangleTest {
 
     @Test
     public void doubleSizeTest(){
-       
+        Triangle myTri = new Triangle(2,3);
+        myTri.doubleSize();
+        assertEquals(24, myTri.calcArea(), 0.0001);
     }
 
 
