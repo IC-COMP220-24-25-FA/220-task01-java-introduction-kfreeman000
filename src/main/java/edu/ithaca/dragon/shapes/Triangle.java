@@ -5,11 +5,12 @@ public class Triangle {
     private double base;
     
 
-    public Triangle(double height, double base){
+    public Triangle(double h, double b){
         if (height <=0 || base <=0) {
             throw new IllegalArgumentException("Length and width must be positive");
         }
-        
+        height = h;
+        base = b;
     }
 
     public double calcArea(){
