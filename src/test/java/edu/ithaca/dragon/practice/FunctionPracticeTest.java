@@ -15,9 +15,9 @@ public class FunctionPracticeTest {
         assertEquals(5, FunctionPractice.largestOfThree(4, 5, 2));
         assertEquals(5, FunctionPractice.largestOfThree(5, 4, 2));
         assertEquals(5, FunctionPractice.largestOfThree(4, 2, 5));
-        assertEquals(5, FunctionPractice.largestOfThree(5, 5, 5));
+        assertEquals(5, FunctionPractice.largestOfThree(5, 5, 5));    // tests with the same int for all three params
 
-        assertThrows(IllegalArgumentException.class, () -> FunctionPractice.largestOfThree(-1, -1, -1));
+        assertThrows(IllegalArgumentException.class, () -> FunctionPractice.largestOfThree(-1, -1, -1));   // tests for negative number 
         assertThrows(IllegalArgumentException.class, () -> FunctionPractice.largestOfThree(5, -1, 3));
         assertThrows(IllegalArgumentException.class, () -> FunctionPractice.largestOfThree(5, 3, -1));
     }

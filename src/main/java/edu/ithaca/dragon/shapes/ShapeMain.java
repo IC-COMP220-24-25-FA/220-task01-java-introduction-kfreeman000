@@ -19,18 +19,21 @@ public class ShapeMain {
         for (int i = 0; i < aList.size(); i++) {
             System.out.println(aList.get(i).calcArea());
             System.out.println(aList.get(i).longestLineWithin());
+        for (int x = 0; x < aList.size(); x++) {
             System.out.println("choose a rectangle index 0-4");
             int index = Integer.parseInt(scanner.nextLine());
             aList.get(index).doubleSize();
-            System.out.println(aList.get(i).calcArea());
-            System.out.println(aList.get(i).longestLineWithin());
+            for (int i2 = 0; i2 < aList.size(); i2++) {
+                System.out.println(aList.get(i2).calcArea());
+                System.out.println(aList.get(i2).longestLineWithin());
         }
         
-
+        }
         
         scanner.close();
 
         }
 
     }
+}
 

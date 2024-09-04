@@ -9,7 +9,17 @@ public class FunctionPractice {
      * @throws IllegalArgumentException if any of the numbers is negative
      */
     public static int largestOfThree(int first, int second, int third){
-        int possibleMax = fir
+        if (first <= 0 || second <= 0 || third <= 0) {
+            throw new IllegalArgumentException("number cannot be negative");
+        }
+        int max = first;
+        if (second > max) {
+            max = second;
+        }
+        if (third > second) {
+            max = third;
+        }
+        return max;
     }
     
     /**
