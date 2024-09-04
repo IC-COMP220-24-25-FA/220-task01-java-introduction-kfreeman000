@@ -24,7 +24,12 @@ public class FunctionPracticeTest {
 
     @Test
     public void calcSalePriceTest(){
-        fail("Not implemented yet");
+        assertEquals(50.55, FunctionPractice.calcSalePrice(100, 0.50, 0.55));
+        assertEquals(95.25, FunctionPractice.calcSalePrice(100, 0.10, 5.25));
+        assertEquals(13.05, FunctionPractice.calcSalePrice(25, 0.50, 0.55));
+        assertEquals(65.55, FunctionPractice.calcSalePrice(99, 0.35, 1.20));
+        assertEquals(6.54, FunctionPractice.calcSalePrice(29.99, 0.80, 0.55));
+        
     }
     
 }
