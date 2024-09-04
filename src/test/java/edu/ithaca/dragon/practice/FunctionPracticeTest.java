@@ -31,5 +31,11 @@ public class FunctionPracticeTest {
         assertEquals(6.547999999999997, FunctionPractice.calcSalePrice(29.99, 0.80, 0.55));
         
     }
-    
+    @Test
+    public void isGoodDogTest(){
+        assertEquals(true, FunctionPractice.isGoodDog(5, 31, true));
+        assertEquals(false, FunctionPractice.isGoodDog(1, 0, false));
+        assertEquals(false, FunctionPractice.isGoodDog(5, 5, false));
+        assertEquals(true, FunctionPractice.isGoodDog(12, 500, true));
+    }
 }
