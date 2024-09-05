@@ -1,10 +1,9 @@
 package edu.ithaca.dragon.practice;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertThrows;
-import static org.junit.jupiter.api.Assertions.assertTrue;
-import static org.junit.jupiter.api.Assertions.fail;
+import java.util.Arrays;
+import java.util.List;
 
 import org.junit.jupiter.api.Test;
 
@@ -37,5 +36,14 @@ public class FunctionPracticeTest {
         assertEquals(false, FunctionPractice.isGoodDog(1, 0, false));
         assertEquals(false, FunctionPractice.isGoodDog(5, 5, false));
         assertEquals(true, FunctionPractice.isGoodDog(12, 500, true));
+    }
+    @Test
+    public void findFirstLargestTest(){
+        List<Integer> someList = Arrays.asList(1,2,3,4,5,6,7,0);
+        assertEquals(6, FunctionPractice.findFirstLargest(someList));
+        List<Integer> someList1 = Arrays.asList(99,99,10,4,5,6,7,10);
+        assertEquals(0, FunctionPractice.findFirstLargest(someList1));
+        List<Integer> someList2 = Arrays.asList();
+        assertEquals(-1, FunctionPractice.findFirstLargest(someList2));
     }
 }
