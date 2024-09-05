@@ -46,4 +46,13 @@ public class FunctionPracticeTest {
         List<Integer> someList2 = Arrays.asList();
         assertEquals(-1, FunctionPractice.findFirstLargest(someList2));
     }
+    @Test
+    public void findLastLargestTest(){
+        List<Integer> someList = Arrays.asList(10,2,3,4,5,6,7,10);
+        assertEquals(7, FunctionPractice.findLastLargest(someList));
+        List<Integer> someList1 = Arrays.asList(99,99,10,4,5,6,7,10);
+        assertEquals(1, FunctionPractice.findLastLargest(someList1));
+        List<Integer> someList2 = Arrays.asList();
+        assertEquals(-1, FunctionPractice.findLastLargest(someList2));
+    }
 }
