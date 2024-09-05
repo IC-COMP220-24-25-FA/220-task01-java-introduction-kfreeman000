@@ -55,4 +55,13 @@ public class FunctionPracticeTest {
         List<Integer> someList2 = Arrays.asList();
         assertEquals(-1, FunctionPractice.findLastLargest(someList2));
     }
+    @Test
+    public void findFirstMostOccurencesOfLetterTest(){
+        List<String> someList = Arrays.asList("a", "cat", "aaa");
+        assertEquals("aaa", FunctionPractice.findFirstMostOccurencesOfLetter(someList, 'a'));
+        List<String> someList1 = Arrays.asList("pig", "cat", "dog", "gorgeous");
+        assertEquals("gorgeous", FunctionPractice.findFirstMostOccurencesOfLetter(someList1, 'g'));
+        List<String> someList2 = Arrays.asList("lol", "like", "laugh");
+        assertEquals("lol", FunctionPractice.findFirstMostOccurencesOfLetter(someList2, 'l'));
+    }
 }
