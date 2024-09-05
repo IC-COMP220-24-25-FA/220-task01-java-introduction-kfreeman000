@@ -75,8 +75,10 @@ public class FunctionPractice {
      * @return the string that has contains the most occurences of the given letter
      * @throws 
      */
-    public static String findFirstMostOccurencesOfLetter(List<String> words, char letter){
-        throw new RuntimeException("Not Implemented");
+    public static String findFirstMostOccurencesOfLetter(List<String> words, char letter){           // need help with this method
+        for (int i = 0; i < words.size(); i++ ){
+            if (words.get(i))
+        }
     }
 
 
