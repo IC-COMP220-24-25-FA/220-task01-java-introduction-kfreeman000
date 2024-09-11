@@ -3,6 +3,18 @@ package edu.ithaca.dragon.shapes;
 public class Circle implements Shape {
     private double radius;
 
+    
+    
+    public string toString(){
+        return "radius = " + radius;
+    }
+
+    
+    
+    
+    
+    
+    
     /**
      * @throws IllegalArgumentException if radius is not a positive number
      */
