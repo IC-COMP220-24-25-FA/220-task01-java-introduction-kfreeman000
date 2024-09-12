@@ -5,7 +5,7 @@ public class Circle implements Shape {
 
     
     
-    public string toString(){
+    public String toString(){
         return "radius = " + radius;
     }
     

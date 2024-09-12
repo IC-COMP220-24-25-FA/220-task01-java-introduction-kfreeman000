@@ -12,24 +12,23 @@ public class ShapeMain {
     public static void main(String[] args){
        List<Shape> shapeList = new ArrayList<Shape>();
        List<String> shapeOptions = new ArrayList<>();
-       shapeOptions.add("circle", "rectangle", "triangle");
+       shapeOptions.add("circle");
+       shapeOptions.add("rectangle");
+       shapeOptions.add("triangle");
        Random random = new Random();
        while (shapeList.size() < 10) {
-           Integer aShapeIndex = random.nextInt(4);
-           String theShape = shapeOptions.get(aShapeIndex);
-           if (theShape == "circle") {
-                shapeList.add(new Circle(5)); 
-           }
-           if (theShape == "rectangle") {
-            shapeList.add(new Rectangle(5,6)); 
-           }
-           if (theShape == "triangle") {
-            shapeList.add(new Triangle(2,4)); 
-           }
-       }
-       Scanner scanner2 = new Scanner(System.in);     // test 
-       System.out.println(shapeList);
-       scanner2.close();
+        Integer aShapeIndex = random.nextInt(4);
+        String theShape = shapeOptions.get(aShapeIndex);
+        if (theShape.equals("circle")) {
+            shapeList.add((Shape) new Circle(5));
+        } else if (theShape.equals("rectangle")) {
+            shapeList.add(new Rectangle(5, 6));
+        } else if (theShape.equals("triangle")) {
+            shapeList.add(new Triangle(2, 4));
+        }
+       }   
+    System.out.println(shapeList);
+   
 
         
         

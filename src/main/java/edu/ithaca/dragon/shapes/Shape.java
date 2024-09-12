@@ -14,7 +14,7 @@ public interface Shape {
 
 
 
-    public string toString();
+    public String toString();
     
     
     

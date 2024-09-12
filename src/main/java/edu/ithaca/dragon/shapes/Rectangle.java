@@ -13,13 +13,12 @@ public class Rectangle implements Shape {
         this.width = width;
     }
 
-    public string toString() {
+    public String toString() {
         return "length = " + length + "and width = " + width;
-
     }
     
     
-        public double calcArea(){
+    public double calcArea(){
         return this.length * this.width;
     }
 
