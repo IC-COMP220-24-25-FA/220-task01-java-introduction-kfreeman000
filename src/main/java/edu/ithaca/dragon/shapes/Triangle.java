@@ -1,5 +1,7 @@
 package edu.ithaca.dragon.shapes;
 
+import java.awt.Shape;
+
 public class Triangle implements Shape {
     private double height;
     private double base;
@@ -13,7 +15,7 @@ public class Triangle implements Shape {
         base = b;
     }
 
-    public string toString() {
+    public String toString() {
         return "height = " + height + "and base = " + base;
     }
 

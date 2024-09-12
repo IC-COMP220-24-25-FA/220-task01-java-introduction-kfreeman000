@@ -8,12 +8,6 @@ public class Circle implements Shape {
     public string toString(){
         return "radius = " + radius;
     }
-
-    
-    
-    
-    
-    
     
     /**
      * @throws IllegalArgumentException if radius is not a positive number
